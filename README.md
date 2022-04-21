@@ -31,3 +31,16 @@ pip install .
 The compression methods here include cross-layer parameter sharing (CLPS), knowledge distillation (KD) and the integration of two mentioned methods. The obtained transformer models are PSMolBERT, KDMolBERT and DeLiCaTe, respectively. The model compression will be shown in turn. Then, the fine-tuning for QSAR and comparison of inference speed are shown. Finally, the inference speed among different transfomer models are compared.
 ### Cross-layer parameter sharing (CLPS)
 You can use the guacamol dataset for CLPS pre-training as well as KD (links at the [bottom](https://github.com/BenevolentAI/MolBERT#data))
+```shell script
+python example/clps.py \
+    --train_file data/guacamol_baselines/guacamol_v1_train.smiles \
+    --valid_file data/guacamol_baselines/guacamol_v1_valid.smiles \
+    --max_seq_length 128 \
+    --batch_size 16 \
+    --masked_lm 1 \
+    --is_same_smiles 0 \
+    --permute 1 \
+    --max_epochs 30 \
+    --val_check_interval 1 \
+    --num_hidden_layers 12 
+```
