@@ -60,7 +60,7 @@ python example/kd.py \
     --matches L3_hidden_smmd L3_hidden_mse 
 ```
 ### Fine-tuning
-We will take PSMolBERT as the example of fine-tuning.
+We will take PSMolBERT as the example for fine-tuning.
 
 
     
