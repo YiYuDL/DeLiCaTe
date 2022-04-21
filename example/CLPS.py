@@ -26,7 +26,7 @@ class SmilesMolAlbertApp(BaseMolAlbertApp):
         """
         
         parser.add_argument(
-            '--num_physchem_properties', type=int, default=0, help='Adds physchem property task (how many to predict)'
+            '--num_physchem_properties', type=int, default=49, help='Adds physchem property task (how many to predict)'
         )
         parser.add_argument('--is_same_smiles', type=int, default=0, help='Adds is_same_smiles task')
         parser.add_argument('--permute', type=int, default=0, help='Permute smiles')
