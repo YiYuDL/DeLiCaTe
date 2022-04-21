@@ -44,3 +44,17 @@ python example/clps.py \
     --val_check_interval 1 \
     --num_hidden_layers 12 
 ```
+### knowledge distillation (KD)
+```shell script
+python example/kd.py \
+    --bert_config_file_T MolBert_config_T.json \
+    --bert_config_file_S MolBert_config_L3.json \
+    --tuned_checkpoint_T molbert100.pkl \
+    --train_file data/guacamol_baselines/guacamol_v1_train.smiles \
+    --predict_file data/guacamol_baselines/guacamol_v1_valid.smiles \
+    --num_train_epochs 13 \
+    --output_dir /output_root_dir/KD \
+    --max_epochs 13 \
+    --temperature 8 \
+    --matches L3_hidden_smmd L3_hidden_mse 
+```
