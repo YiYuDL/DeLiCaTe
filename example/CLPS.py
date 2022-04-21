@@ -35,6 +35,7 @@ class SmilesMolAlbertApp(BaseMolAlbertApp):
         )
         parser.add_argument('--vocab_size', default=42, type=int, help='Vocabulary size for smiles index featurizer')
         parser.add_argument('--num_hidden_layers', default=12, type=int, help='number of hidden layers for PSMolBERT')
+        parser.add_argument('--num_workers', default=0, type=int)
         return parser
 
 
