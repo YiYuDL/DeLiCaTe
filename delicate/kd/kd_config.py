@@ -4,11 +4,8 @@ args = None
 
 def parse(opt=None):
     parser = argparse.ArgumentParser()
-
+    
     ## Required parameters
-
-    # parser.add_argument("--vocab_file", default=None, type=str, required=True,
-    #                     help="The vocabulary file that the MolBert model was trained on.")
     parser.add_argument("--output_dir", default=None, type=str, required=True,
                         help="The output directory where the model checkpoints will be written.")
 
@@ -22,8 +19,8 @@ def parse(opt=None):
                             "than this will be padded." )
     
     
-    parser.add_argument("--do_train", default=False, action='store_true', help="Whether to run training.")
-    parser.add_argument("--do_predict", default=False, action='store_true', help="Whether to run eval on the dev set.")
+    parser.add_argument("--do_train", default=True, action='store_true', help="Whether to run training.")
+    parser.add_argument("--do_predict", default=True, action='store_true', help="Whether to run eval on the dev set.")
     parser.add_argument("--train_batch_size", default=32, type=int, help="Total batch size for training.")
     parser.add_argument("--predict_batch_size", default=8, type=int, help="Total batch size for predictions.")
     parser.add_argument("--learning_rate", default=1e-4, type=float, help="The initial learning rate for Adam.")
