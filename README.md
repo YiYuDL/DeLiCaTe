@@ -10,18 +10,6 @@ The compression methods in this package is based heavily on the MolBERT from Ben
 https://github.com/BenevolentAI/MolBERT
 
 ### Prerequisites
-
-'''
-python 3.7
-numpy
-rdkit 2019.03.1.0
-scikit-learn 0.21.3
-pytorch-lightning 0.8.4
-transformers 3.5.1
-textbrewer 0.2.1
-pytorch 1.7.0
-'''
-### Prerequisites
 ```bash
 python 3.7
 numpy
