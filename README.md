@@ -1,6 +1,6 @@
-# DeLiCaTe
+# DeLiCaTe (Deep light chemical transformer)
 
-Implementation of the Paper "Chemical transformer Compression for accelerating both training and inference of molecular modeling" by Yi Yu and Karl Börjesson. We assumed that our strategy will accelerate both training and inference of chemical transformer for molecular modeling. Pre-trained MolBERT (100-epoch) and PSMolBERT (30-epoch) could be download here. We expect to continue to release other pre-trained models when the paper is accepted.
+Implementation of the Paper "Chemical transformer Compression for accelerating both training and inference of molecular modeling" by Yi Yu and Karl Börjesson. We assumed that the **de**ep **li**ght **c**hemic**a**l **t**ransform**e**r  will accelerate both training and inference of chemical transformer for molecular modeling. Pre-trained MolBERT (100-epoch) and PSMolBERT (30-epoch) could be download here. We expect to continue to release other pre-trained models when the paper is accepted.
 
 <img src="example/TOC.png" width="100%" height="100%">
 
