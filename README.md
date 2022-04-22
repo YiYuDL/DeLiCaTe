@@ -75,4 +75,4 @@ As for PSMolBERT, KDMolBERT and DeLiCate, their inference speed could be compare
 ```python
 from inference_speed import speed_comparison
 speed_comparison('DeLiCaTe')
-'''
+```
