@@ -13,6 +13,7 @@ https://github.com/BenevolentAI/MolBERT
 ```bash
 python 3.7
 numpy
+MolBERT 
 rdkit 2019.03.1.0
 scikit-learn 0.21.3
 pytorch-lightning 0.8.4
