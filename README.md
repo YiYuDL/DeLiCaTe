@@ -10,7 +10,7 @@ The compression methods in this package is based heavily on the MolBERT from Ben
 https://github.com/BenevolentAI/MolBERT
 
 ### Prerequisites
-'''
+'''bash
 python 3.7
 numpy
 rdkit 2019.03.1.0
