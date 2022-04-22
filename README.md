@@ -1,6 +1,6 @@
 # DeLiCaTe (Deep light chemical transformer)
 
-Implementation of the Paper "Chemical transformer Compression for accelerating both training and inference of molecular modeling" by Yi Yu and Karl Börjesson. We assumed that the **de**ep **li**ght **c**hemic**a**l **t**ransform**e**r  will accelerate both training and inference of chemical transformer for molecular modeling. Pre-trained MolBERT (100-epoch) and PSMolBERT (30-epoch) could be download here. We expect to continue to release other pre-trained models when the paper is accepted.
+Implementation of the Paper "Chemical transformer Compression for accelerating both training and inference of molecular modeling" by Yi Yu and Karl Börjesson. We assumed that the **de**ep **li**ght **c**hemic**a**l **t**ransform**e**r  will accelerate both training and inference of chemical transformer for molecular modeling. 
 
 <img src="example/TOC.png" width="100%" height="100%">
 
@@ -32,7 +32,7 @@ pip install .
 ## Getting start
 The compression methods here include cross-layer parameter sharing (CLPS), knowledge distillation (KD) and the integration of two mentioned methods. The obtained transformer models are PSMolBERT, KDMolBERT and DeLiCaTe, respectively. The model compression will be shown in turn. Then, the fine-tuning for QSAR and comparison of inference speed are shown. Finally, the inference speed among different transfomer models are compared.
 ### load pretrained model
-The pretrained PSMolBERT (30-epoch) can be downloaded **here** as well as MolBERT (100-epoch). Both of **them** 
+The pretrained PSMolBERT (30-epoch) can be downloaded **here** as well as MolBERT (100-epoch). Both of them are state_dict of models.
 We expect to continue to release other pre-trained models when the paper is accepted.
 ### Cross-layer parameter sharing (CLPS)
 You can use the guacamol dataset for CLPS pre-training as well as KD (links at the [bottom](https://github.com/BenevolentAI/MolBERT#data))
