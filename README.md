@@ -52,8 +52,8 @@ python example/clps.py \
 ### Knowledge distillation (KD)
 ```shell script
 python example/kd.py \
-    --bert_config_file_T MolBert_config_T.json \
-    --bert_config_file_S MolBert_config_L3.json \
+    --bert_config_file_T config_json/MolBert_config_T.json \
+    --bert_config_file_S config_json/MolBert_config_L3.json \
     --T_start MolBERT \
     --tuned_checkpoint_T model/MolBERT_100.pkl \
     --train_file data/guacamol_baselines/guacamol_v1_train.smiles \
