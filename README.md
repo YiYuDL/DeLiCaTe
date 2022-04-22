@@ -1,6 +1,6 @@
 # DeLiCaTe
 
-Implementation of the Paper "Chemical transformer Compression for accelerating both training and inference of molecular modeling" by Yi Yu and Karl Börjesson. We assumed that our strategy will accelerate both training and inference of chemical transformer for molecular modeling. We have now pulished our results in pre-print and will make the models available when the paper accepted.
+Implementation of the Paper "Chemical transformer Compression for accelerating both training and inference of molecular modeling" by Yi Yu and Karl Börjesson. We assumed that our strategy will accelerate both training and inference of chemical transformer for molecular modeling. Pre-trained MolBERT (100-epoch) and PSMolBERT (30-epoch) could be download here. We expect to continue to release other pre-trained models when the paper is accepted.
 
 <img src="example/TOC.png" width="100%" height="100%">
 
@@ -61,6 +61,16 @@ python example/kd.py \
 ```
 ### Fine-tuning
 We will take PSMolBERT as the example for fine-tuning.
-
+python example/clps.py \
+    --train_file data/guacamol_baselines/guacamol_v1_train.smiles \
+    --valid_file data/guacamol_baselines/guacamol_v1_valid.smiles \
+    --max_seq_length 128 \
+    --batch_size 16 \
+    --masked_lm 1 \
+    --is_same_smiles 0 \
+    --permute 1 \
+    --max_epochs 30 \
+    --val_check_interval 1 \
+    --num_hidden_layers 12 
 
     
