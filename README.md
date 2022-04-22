@@ -72,7 +72,7 @@ python example/run_finetuning.py \
     --freeze_level 0 \
     --model PSMolBERT \
     --learning_rate 3e-05 \
-    --batch_size 16 \
+    --batch_size 16
 ``` 
 ### inference speed comparison
 As for PSMolBERT, KDMolBERT and DeLiCate, their inference speed could be compared with original MolBERT. Take DeLiCaTe for example:
