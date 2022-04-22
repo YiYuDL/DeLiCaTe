@@ -51,7 +51,7 @@ python example/kd.py \
     --bert_config_file_T MolBert_config_T.json \
     --bert_config_file_S MolBert_config_L3.json \
     --T_start MolBERT \
-    --tuned_checkpoint_T molbert100.pkl \
+    --tuned_checkpoint_T model/MolBERT_100.pkl \
     --train_file data/guacamol_baselines/guacamol_v1_train.smiles \
     --predict_file data/guacamol_baselines/guacamol_v1_valid.smiles \
     --num_train_epochs 13 \
@@ -61,16 +61,13 @@ python example/kd.py \
 ```
 ### Fine-tuning
 We will take PSMolBERT as the example for fine-tuning.
-python example/clps.py \
-    --train_file data/guacamol_baselines/guacamol_v1_train.smiles \
-    --valid_file data/guacamol_baselines/guacamol_v1_valid.smiles \
-    --max_seq_length 128 \
+```shell script
+python example/run_finetuning.py \
+    --pretrained_model_path model/PSMolBERT_30.pkl \
+    --num_hidden_layers 12 \
+    --freeze_level 0 \
+    --model PSMolBERT \
+    --learning_rate 3e-05 \
     --batch_size 16 \
-    --masked_lm 1 \
-    --is_same_smiles 0 \
-    --permute 1 \
-    --max_epochs 30 \
-    --val_check_interval 1 \
-    --num_hidden_layers 12 
-
+```
     
