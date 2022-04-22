@@ -29,6 +29,14 @@ conda create -y -q -n delicate -c rdkit rdkit=2019.03.1.0 python=3.7.3
 conda activate delicate
 pip install .
 ```
+### Install via Anaconda (recommended way)
+```bash
+git clone https://github.com/YiYuDL/DeLiCaTe.git
+cd DeLiCaTe
+conda create -y -q -n delicate -c rdkit rdkit=2019.03.1.0 python=3.7.3
+conda activate delicate
+pip install .
+```
 ## Getting start
 The compression methods here include cross-layer parameter sharing (CLPS), knowledge distillation (KD) and the integration of two mentioned methods. The obtained transformer models are PSMolBERT, KDMolBERT and DeLiCaTe, respectively. The model compression will be shown in turn. Then, the fine-tuning for QSAR and comparison of inference speed are shown. Finally, the inference speed among different transfomer models are compared.
 ### Cross-layer parameter sharing (CLPS)
