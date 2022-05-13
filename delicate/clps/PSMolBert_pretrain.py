@@ -1,8 +1,8 @@
   # -*- coding: utf-8 -*-
 """
-Created on Thu Jan  6 23:11:21 2022
-
-@author: yuyi6
+@author: YiYuDL
+Pretraining model by cross-layer parameter sharing.
+Adapted in part from MolBERT (https://github.com/BenevolentAI/MolBERT).
 """
 
 import logging
