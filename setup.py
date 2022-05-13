@@ -2,7 +2,7 @@ from setuptools import setup
 
 setup(
     name='DeLiCaTe',
-    version='1.0.0',
+    version='1.1.0',
     packages=['DeLiCaTe'],
     url='https://github.com/YiYuDL/DeLiCaTe',
     author='Yi Yu',
