@@ -2,7 +2,9 @@
 """
 Created on Wed Feb  2 14:36:19 2022
 
-@author: yuyi6
+@author: YiYuDL
+Compressing model by knowledge distillation.
+Adapted in part from TextBrewer (https://github.com/airaria/TextBrewer#quickstart).
 """
 
 import logging
