@@ -1,3 +1,7 @@
+"""
+Fine-tuning the pretrained or distilled model.
+Adapted in part from MolBERT (https://github.com/BenevolentAI/MolBERT).
+"""
 import os
 import json
 import numpy as np
