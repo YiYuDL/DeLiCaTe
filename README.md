@@ -74,7 +74,7 @@ python example/run_finetuning.py \
     --learning_rate 3e-05 \
     --batch_size 16
 ``` 
-### inference speed comparison
+### Inference speed comparison
 As for PSMolBERT, KDMolBERT and DeLiCate, their inference speed could be compared with original MolBERT. Take DeLiCaTe for example:
 ```python
 from inference_speed import speed_comparison
